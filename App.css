@@ -1,0 +1,13 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: 1px;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar{
+  display: none;
+}

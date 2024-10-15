@@ -1,0 +1,358 @@
+nav {
+    height: 60px;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.cen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 50%;
+}
+
+.close-btn:hover {
+    background-color: whitesmoke;
+}
+
+.divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav .title {
+    flex: 1;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+nav .profile-section {
+    width: 60px;
+}
+
+.profile-section .profile {
+    background-color: #7CB9E8;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.logout-menu {
+    position: absolute;
+    top: 55px;
+    right: 0.5%;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.75rem;
+    background-color: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.logout-btn {
+    background-color: whitesmoke;
+    color: red;
+    padding: 0.5rem;
+    font-weight: 700;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.with-btn {
+    cursor: pointer;
+    color: red;
+}
+
+.search-area {
+    width: 90vw;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 1.5rem auto;
+    padding: 0.75rem;
+    border-radius: 10px;
+    background-color: white;
+    /* z-index: 90;     */
+    position: sticky;
+    top: calc(1.5rem + 60px);
+    display: flex;
+    align-items: center;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.full-box {
+    background-color: white;
+    border-radius: 10px;
+    min-width: 30vw;
+    width: fit-content;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrange-input {
+    width: 100%;
+}
+
+.label-holder input,
+select {
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+#date,
+#time {
+    width: 100%;
+}
+
+.custom-time-input {
+    width: 300px;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-area input {
+    width: 20%;
+    background-color: #f4f6f6;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.search-area #searchTask {
+    position: absolute;
+    width: 20%;
+    right: 1%;
+    background-color: #f4f6f6;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.s-icon {
+    position: absolute;
+    color: #575d60;
+    right: 3%;
+}
+
+.label-holder label {
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.search-area input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+.search-area button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #7CB9E8;
+    font-weight: 700;
+    color: white;
+    width: 160px;
+    cursor: pointer;
+}
+
+.full-box #search-btn {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #669b38;
+    font-weight: 700;
+    color: white;
+    width: 150px;
+    cursor: pointer;
+}
+
+.task-cards {
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 912px) {
+    .task-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .s-icon{
+        display: none;
+    }
+}
+.task-card {
+    background-color: #f4f6f6;
+    padding: 15px;
+    padding-bottom: 1.5rem;
+    border-radius: 10px;
+    min-height: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.main-task {
+    width: 80%;
+}
+
+p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.task-card button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 3rem;
+    padding: 0.15rem;
+    border-radius: 0.25rem;
+}
+
+.task-card button:hover {
+    color: whitesmoke;
+    border: none;
+}
+
+.delete-task-btn {
+    color: #fd5c63;
+    font-size: 0.75rem;
+    border: 1px solid #fd5c63;
+    margin: 2.5rem 0.5rem;
+}
+
+.edit-task-btn {
+    margin: 0.5rem 0.5rem;
+    font-size: 0.75rem;
+    color: #7CB9E8;
+    border: 1px solid #7CB9E8;
+}
+
+.delete-task-btn:hover {
+    background-color: #fd5c63;
+}
+
+.edit-task-btn:hover {
+    background-color: #7CB9E8;
+}
+
+.priority-btn {
+    position: absolute;
+    bottom: 0;
+}
+
+.on-created-data {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.85rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0;
+}
+
+.mark-complete-btn {
+    position: absolute;
+    bottom: 1.75rem;
+    right: 0.5rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    border: 1px solid #7CB9E8;
+    color: #7CB9E8;
+    border-radius: 5px;
+    padding: 0.25rem;
+    font-weight: 600;
+}
+
+.mark-complete-btn.completed {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    border: 1px solid #669b38;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.confirm-box{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    height: 100px;
+    width: 350px;
+}
+.reply-area{
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.reply-area button{
+    border-radius: 8px;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    font-weight: 600;
+}
+.confirm-dlt-btn{
+    background-color: #fd5c63;
+    color: white;
+}
+.confirm-cancel-btn{
+    background-color: #7CB9E8;
+    color: white;
+}
+
+.no-task{
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 8rem;
+    font-weight: 700;
+}

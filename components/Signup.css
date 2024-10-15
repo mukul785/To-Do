@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+}
+.top {
+    background-color: white;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.heading p {
+    font-size: larger;
+    color: #7CB9E8;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main {
+    height: calc(100vh - 60px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup {
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+    width: fit-content;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #7CB9E8;
+}
+
+.signup input {
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: solid 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 366px;
+    height: 42px;
+}
+
+.signup input::placeholder {
+    font-size: 15px;
+}
+
+.linker {
+    display: flex;
+    justify-content: space-between;
+    color: #7CB9E8;
+    margin-top: 10px;
+    width: 366px;
+}
+.linker .switch a{
+    color: #7CB9E8;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #7CB9E8;
+    line-height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-btn p {
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    padding: 0.25rem;
+}
